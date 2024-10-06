@@ -7,7 +7,7 @@
 *
 {% endcomment %}
 
-<div class="newsletter-banner">
+<div class="banner-newsletter">
   <p>Want to get informed about upcoming events and more?</p>
   <a href="{{ site.baseurl }}/newsletter/" class="button">Subscribe to our Newsletter</a>
 </div>
