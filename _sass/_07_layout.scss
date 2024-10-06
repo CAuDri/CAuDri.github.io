@@ -63,28 +63,110 @@ body.video cite { color: #fff; }
   display: none;
 }
 
-/* Banner Newsletter 
-------------------------------------------------------------------- */
-
-.banner-newsletter {
-    background-color: $caudri-blue;
+// Shared styles for both banners
+.banner-base {
     color: $white;
-    text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     margin-bottom: 2rem;
   
     p {
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
       font-size: 1.2rem;
     }
   
     .button {
-      background-color: $white;
-      color: $caudri-blue;
       font-weight: bold;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
       
       &:hover {
         background-color: darken($white, 10%);
+      }
+    }
+  }
+  
+  // Newsletter banner specific styles
+  .banner-newsletter {
+    @extend .banner-base;
+    background-color: $caudri-blue;
+    text-align: left;
+  
+    .button {
+      background-color: $white;
+      color: $caudri-blue;
+    }
+  }
+  
+  // Discord banner specific styles
+  .banner-discord {
+    @extend .banner-base;
+    background-color: #5865F2; // Discord color
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .button {
+      background-color: $white;
+      color: #5865F2;
+    }
+  
+    .discord-content {
+      margin-bottom: 1rem;
+    }
+  
+    .discord-qr {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+  
+      img {
+        max-width: 100px;
+        height: auto;
+        margin-right: 1rem;
+      }
+  
+      p {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+    }
+  }
+  
+  // Media query for larger screens
+  @media screen and (min-width: 640px) {
+    .banner-discord {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+  
+      .discord-content {
+        flex: 1;
+        margin-right: 2rem;
+        margin-bottom: 0;
+      }
+  
+      .discord-qr {
+        flex: 0 0 auto;
+        margin-top: 0;
+      }
+    }
+  }
+  
+  // New media query for smaller screens (newsletter banner)
+  @media screen and (max-width: 639px) {
+    .banner-newsletter {
+      text-align: left;
+  
+      p {
+        margin-bottom: 1rem;
+      }
+  
+      .button {
+        display: block;
+        text-align: center;
       }
     }
   }

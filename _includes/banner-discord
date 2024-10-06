@@ -1,0 +1,11 @@
+<div class="banner-discord">
+  <div class="discord-content">
+    <p>Join our Discord community for real-time updates and discussions!</p>
+    <a href="https://discord.com/invite/ZvPmWd5hAK" class="button" target="_blank">Join our Discord Server</a>
+  </div>
+  <div class="discord-qr">
+    <img src="{{ site.baseurl }}/images/qr/discord_invite_code_ZvPmWd5hAK_white.png" alt="Discord Invite QR Code">
+    <p>Have your phone on hand?<br /> 
+        Scan the QR code to join!</p>
+  </div>
+</div>
