@@ -1,0 +1,13 @@
+{% comment %}
+*
+*    This HTML snippet represents a newsletter banner section.
+*    It includes a message prompting users to stay updated with the latest CAuDri news.
+*    There is also a button that redirects users to the subscription page.
+*    The button uses the base URL of the site and appends "/subscribe/" to it.
+*
+{% endcomment %}
+
+<div class="newsletter-banner">
+  <p>Want to get informed about upcoming events and more?</p>
+  <a href="{{ site.baseurl }}/newsletter/" class="button">Subscribe to our Newsletter</a>
+</div>

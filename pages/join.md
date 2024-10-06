@@ -7,3 +7,5 @@ permalink: /join/
 ---
 
 Join our [Discord Server]({{site.caudri.discord_invite}}) and get in touch with us!
+
+{% include newsletter-banner %}

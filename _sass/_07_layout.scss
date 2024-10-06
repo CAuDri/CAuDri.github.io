@@ -63,7 +63,31 @@ body.video cite { color: #fff; }
   display: none;
 }
 
+/* Newsletter Banner
+------------------------------------------------------------------- */
 
+.newsletter-banner {
+    background-color: $caudri-blue;
+    color: $white;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  
+    p {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+  
+    .button {
+      background-color: $white;
+      color: $caudri-blue;
+      font-weight: bold;
+      
+      &:hover {
+        background-color: darken($white, 10%);
+      }
+    }
+  }
 
 /* Masthead
 ------------------------------------------------------------------- */
