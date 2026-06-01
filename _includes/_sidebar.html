@@ -1,25 +1,21 @@
 <aside>
+	{% if page.toc %}
+	<div class="panel radius">
+		<h3>Contents</h3>
+		<ul class="no-bullet" style="margin-bottom: 0;">
+			{% for item in page.toc %}
+			<li style="margin-bottom: 0.3rem;"><a href="{{ item.url }}">{{ item.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% endif %}
+
 	<div class="panel radius">
 		<h3>Previous Events</h3>
 		<p>
-			<a href="/blog/caudri-challenge-2024/">Season 2024</a><br/>
-			<a href="/blog/caudri-challenge-2023/">Season 2023</a><br/>
+			<a href="/season-2025/caudri-challenge-2025/">Season 2025</a><br/>
+			<a href="/season-2024/caudri-challenge-2024/">Season 2024</a><br/>
+			<a href="/season-2023/caudri-challenge-2023/">Season 2023</a><br/>
 		</p>
 	</div>
-
-	
-	{% comment %}
-	
-	{% include banner-newsletter %}
-
-  	<img class="b30" src="http://dummyimage.com/303x16:9/df4949/e27b3f.png&amp;text=Ugly+Ad+Space" alt="">
-
-
-	<div class="border-dotted radius b30">
-		<img src="http://placekitten.com/271/270" alt="uh, Placekitten">
-		<p class="text-left">
-			This is an advertisement with a crazy cat! <a href="http://placekitten.com/">More cats, please!</a>
-		</p>
-	</div>
-	{% endcomment %}
 </aside>
